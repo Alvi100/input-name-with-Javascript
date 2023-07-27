@@ -1,0 +1,37 @@
+<html>
+   <head> 
+    <style type="text/css">
+     h3,p{
+      display: inline-block;
+     }
+     h2{
+      color: red;
+     }
+     h3{
+      color: green;
+     }
+    </style>
+     <script type="text/javascript">
+      function myFunction(){
+        
+        document.getElementById("name").innerHTML= prompt("       Enter Your Name: ") ;
+        document.getElementById("name").style.color="blue";
+        document.getElementById("name").style.fontSize="25px";
+        document.getElementById("btn").style.display ="none";
+      }
+      
+      function myPrint(){
+       
+       window.print();
+      
+      }
+      
+     </script>
+   </head>
+  <body>
+   <h2>What is your name?</h2>
+   <h3>Answer:</h3> <p id="name"></p>
+   <button type="submit" id="btn" onclick="myFunction()">Submit Name</button>
+   <button type="print" id="print" onclick="myPrint()">Print</button>
+  </body>
+</html>
