@@ -1,0 +1,64 @@
+<html>
+   <head> 
+   <script src="https://kit.fontawesome.com/68319829d3.js" crossorigin="anonymous"></script>
+   
+    <style type="text/css">
+     body{
+      margin: 20px auto;
+      box-sizing:border-box;
+      background-color: black;
+      height: ;
+     }
+     h3,p{
+      display: inline-block;
+     }
+     h2{
+      color: red;
+     }
+     h3{
+      color: green;
+     }
+     a.submit{
+      background-color: white;
+      padding: 5px 10px;
+      border: 1px solid green;
+      border-radius: 5px;
+     }
+     
+     a.print{
+      color:white;
+      background-color: blue;
+      border: 2px solid black;
+      border-radius: 5px;
+      display:flex;
+      flex-direction: row;
+      float: right;
+      margin: 20px;
+      padding: 10px 20px;
+      justify-content:center;
+     }
+    </style>
+     <script type="text/javascript">
+      function myFunction(){
+        
+        document.getElementById("name").innerHTML= prompt("       Enter Your Name: ") ;
+        document.getElementById("name").style.color="white";
+        document.getElementById("name").style.fontSize="25px";
+        document.getElementById("btn").style.display ="none";
+      }
+      
+      function myPrint(){
+       
+       window.print();
+       document.getElementById("print").style.display ="none";
+      }
+      
+     </script>
+   </head>
+  <body>
+   <h2>What is your name?</h2>
+   <h3>Answer:</h3> <p id="name"></p>
+   <a class="submit" type="submit" id="btn" onclick="myFunction()">Submit Name</a>
+   <a class="print" type="print" id="print" onclick="myPrint()"><i class="fa-solid fa-print" style="color: #ffffff;"></i> Print</a>
+  </body>
+</html>
